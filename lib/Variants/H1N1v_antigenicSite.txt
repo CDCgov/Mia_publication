@@ -1,0 +1,17 @@
+65	Antigenic site E
+101	Antigenic site E
+144	Antigenic site A
+158	Antigenic site A
+159	Antigenic site A
+172	Antigenic site B
+173	Antigenic site B
+185	Antigenic site D
+186	Antigenic site D
+200	Antigenic site B
+202	Antigenic site B
+203	Antigenic site B
+208	Antigenic site B
+228	Antigenic site D
+239	Receptor binding; Antigenic site D
+241	Receptor binding; Antigenic site D
+293	Antigenic site C

@@ -1,0 +1,15 @@
+CREATE TABLE albacore_summary (RunID TEXT, Dir INT, ReadID TEXT, PassesFiltering TEXT, SeqLength INT, MeanQscore NUM, Barcode TEXT, BarcodeScore NUM);
+CREATE TABLE irma_summary (IRMAfinishedTime TEXT, RunID TEXT, NumReads INT, Sample TEXT, Match INT, Nomatch INT, Chimeric INT, HA INT, MP INT, NA INT, NP INT, NS INT, PA INT, PB1 INT, PB2 INT);
+CREATE TABLE coverage (IRMAfinishedTime TEXT, RunID TEXT, NumReads INT, Sample TEXT, Segment TEXT, Reference_Name TEXT, Position INT, Coverage NUMERIC, Consensus TEXT, Deletions INT, Ambiguous INT);
+CREATE TABLE progress (RunID TEXT, DirType TEXT, Reads INT, DirMtime TEXT);
+CREATE TABLE blast (RunID TEXT, NumReads INT, Sample TEXT, Segment TEXT, query TEXT, subject TEXT, percent_identity NUMERIC, align_len INT, mismatches INT, gaps INT, q_start INT, q_end INT, s_start INT, s_end INT, evalue NUMERIC, bit_score INT);
+CREATE TABLE newick (RunID TEXT, NumReads INT, Segment TEXT, newick TEXT);
+CREATE TABLE cvv_vars (RunID TEXT, NumReads INT, Sample TEXT, CVV_reference TEXT, AA_position INT, CVV_reference_AA TEXT, Sample_AA TEXT, Match TEXT, Antigenic_site TEXT);
+CREATE INDEX coverage_runNumreadSampSeg on coverage (RunID, NumReads, Sample, Segment);
+CREATE INDEX albacore_summary_runID on albacore_summary (RunID);
+CREATE INDEX irma_summary_runNumread on irma_summary (RunID, NumReads);
+CREATE INDEX progress_runID on progress (RunID);
+CREATE INDEX blast_runNumreadSampSeg on blast (RunID, NumReads, Sample, Segment);
+CREATE INDEX newick_runNumreadSeg on newick (RunID, NumReads, Segment);
+CREATE INDEX cvv_vars_runNumread on cvv_vars (RunID, NumReads);
+CREATE TABLE hana (RunID TEXT, NumReads INT, Sample TEXT, Segment TEXT, Subtype TEXT);

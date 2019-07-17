@@ -1,0 +1,23 @@
+
+# Backup files
+.*swp
+.*swo
+.*swm
+
+# Generated files
+*.o
+.depend
+nanopolish
+nanopolish_test
+
+# libhdf5 directories
+bin/
+hdf5-*/
+include/
+lib/
+share/
+
+hdf5-1.8.14.tar.gz
+3.2.5.tar.bz2
+eigen/
+local*

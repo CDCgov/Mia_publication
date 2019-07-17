@@ -1,0 +1,3 @@
+138	Receptor binding site
+145	Antigenic site A
+209	Antigenic site D
