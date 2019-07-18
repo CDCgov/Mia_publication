@@ -1,6 +1,6 @@
 #!/bin/bash
 
-watchRoot="/home/mia2/minionRuns/*MinION*"
+watchRoot="/home/$(whoami)/minionRuns/*MinION*"
 
 SCRIPTS=$(readlink -f $(dirname $0))
 IRMA=$(cd $SCRIPTS && readlink -f ../bin/flu-amd/IRMA)
