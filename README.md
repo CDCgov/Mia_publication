@@ -5,7 +5,7 @@ This repository contains scripts used for the manuscript *Mitigating Pandemic Ri
 
 ## Installation
 ```bash
-git clone git@git.biotech.cdc.gov:nbx0/mia_publication.git
+git clone https://github.com/CDCgov/Mia_publication.git
 cd MIA/scripts
 sudo bash install.sh
 cd -
@@ -13,7 +13,7 @@ cd -
 
 ## Dependencies
 Everything below is attempted to install with ./MIA/scripts/install.sh.
-Due to the large number of dependencies however, there is a decent change everything will not 
+Due to the large number of dependencies however, there is a decent chance everything will not 
 properly install, requiring some manual troubleshooting/install. Setting up the R environment
 can be particularly sticky.
 
